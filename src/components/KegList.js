@@ -5,8 +5,8 @@ import PropTypes from "prop-types";
 function KegList(props) {
   return (
     <>
-      <hr/>
-      {props.mainKegList.map((keg, index) =>
+      <hr />
+      {props.kegList.map((keg, index) =>
         <Keg names={keg.names}
         brand={keg.brand}
         price={keg.price}
