@@ -1,70 +1,161 @@
-# Getting Started with Create React App
+<br>
+<p align="center">
+  <u><big>|| <b> Title !</b> || </big></u>
+</p>
+<br>
+<p align="center">
+  <p align="center">
+  </p>
+  <p align="center">
+    <a href="https://github.com/MorganJBradford">
+      <strong>Morgan Bradford</strong> | 
+    </a>
+  </p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <small>Initiated April 23th.</small>
+</p>
+<p align="center">
+    <a href="https://github.com/MorganJBradford/tap-room"><big>Project Docs</big></a> ·
+    <a href="https://github.com/MorganJBradford/tap-room/issues"><big>Report Bug</big></a> ·
+    <a href="https://github.com/MorganJBradford/tap-room/issues"><big>Request Feature</big></a>
+</p>
 
-## Available Scripts
+## 🌐 About the Project
 
-In the project directory, you can run:
+### 📖 Description
+A Discord bot that acts as a dad joke supplement to replace one of our retired instructors at [Epicodus](https://www.epicodus.com/). Written in C#/.NET, it utilizes an API via RESTful principles, WebSocket protocol, and Docker containerization for remote server hosting. 
+<br>
+<br>
+Although no setup is required to simply invite the bot to your Discord server, if you would like to download, alter, or deploy the source code yourself, follow along with the instructions detailed in the [Getting Started](#-getting-started) Section.
+<br>
+<br> 
+Otherwise, skip to the [Add OUR Bot](#%EF%B8%8F-add-our-bot) section to get started by adding the bot directly to your own Discord server. 
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 🦠 Known Bugs
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* No known bugs
 
-### `npm test`
+### 🛠 Built With
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* [Visual Studio Code](https://code.visualstudio.com/)
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [React](https://reactjs.org)
+* [Git & GitHub](https://github.com/)
 
-### `npm run build`
+------------------------------
+## Component Tree
+<p align="center">
+  <img src="./src/img/tap-room-component-model.png" height="400px" width="600px" align="center">
+</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+------------------------------
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🏁 Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 📋 Prerequisites
 
-### `npm run eject`
+  #### Code Editor
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+  To view or edit the code, you will need a code editor or text editor. The popular open-source choices for code editors are Atom and Visual Studio Code.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  1) Code editor download:
+      * Option 1: [Atom](https://atom.io/)
+      * Option 2: [Visual Studio Code](https://code.visualstudio.com/)
+  2) Click the download most applicable to your OS and system.
+  3) Wait for download to complete, then install -- Windows will run the setup exe and macOS will drag and drop into applications.
+  4) Open your editor, and open the Command Palette by pressing `Cmd+Shift+P` for Mac, or `Ctrl-shift-p` for Windows
+      * For VS Code, type `Shell Command: Install 'code' command in PATH` into the Command Palette.
+      * For Atom, type `Install Shell Commands` into the Command Palette.
+  5) Optionally, create a [GitHub account](https://github.com)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### ⚙️ Setup and Use
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+  #### Cloning
 
-## Learn More
+  1) Navigate to the [repository here](https://github.com/MorganJBradford/tap-room).
+  2) Click 'Code' to reveal the HTTPS url ending with .git and the 'Download ZIP' option.
+  3) Open up your system Terminal or GitBash, navigate to your desktop with the command: `cd Desktop`, or whichever location suits you best.
+  4) Clone the repository to your desktop: `$ git clone https://github.com/MorganJBradford/tap-room.git`
+  5) Run the command `cd tap-room` to enter into the project directory.
+  6) View or edit:
+      * Code editor - Run the command `atom .` or `code .` to open the project in Atom or Visual Studio Code respectively for review and editing.
+      * Text editor - Open by double clicking on any of the files to open in a text editor.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  #### Download
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  1) Navigate to the [repository here](https://github.com/MorganJBradford/tap-room).
+  2) Click 'Code' to reveal the HTTPS url ending with .git and the 'Download ZIP' option.
+  3) Click 'Download ZIP' and extract.
+  4) Open by double clicking on any of the files to open in a text editor.
+  
+  #### Launch Application
 
-### Code Splitting
+  * In the tap-room repository:
+      * Enter `npm start` in your terminal.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+------------------------------
 
-### Analyzing the Bundle Size
+## 🤝 Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+| Linkedin | GitHub | Email |
+|--------|:------:|:-----:|
+| [Morgan Bradford](https://www.linkedin.com/in/morganjbradford/) | [MorganJBradford](https://github.com/MorganJBradford) | [morganjbradford95@gmail.com](mailto:morganjbradford+github95@gmail.com?subject=[GitHub]Epicodus%20Team%20Week%20-%20Dad%20Joke%20Discord%20Bot) |
 
-### Making a Progressive Web App
+------------------------------
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## ✉️ Contact and Support
 
-### Advanced Configuration
+If you have any feedback or concerns, please contact one of the contributors.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<p>
+  <a href="https://github.com/Pingel88/DadJokeDiscordBot.Solution/issues">Report Bug</a> ·
+  <a href="https://github.com/Pingel88/DadJokeDiscordBot.Solution/issues">Request Feature</a>
+</p>
 
-### Deployment
+------------------------------
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## ⚖️ License
 
-### `npm run build` fails to minify
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). Copyright (C) 2021 Morgan Bradford. All Rights Reserved.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+MIT License
+
+Copyright (c) 2021 Morgan Bradford
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+------------------------------
+
+## 🌟 Acknowledgements
+
+#### [Epicodus](https://www.epicodus.com/)
+>"A school for tech careers... to help people learn the skills they need to get great jobs."
+
+#### [The Internet](https://webfoundation.org/)
+>"...the first thing that humanity has built that humanity doesn't understand..."
+
+-Eric Schmidt, Google (Alphabet Inc.)
+
+------------------------------
+
+<p align="center"><a href="#">Return to Top</a></p>
