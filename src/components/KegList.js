@@ -3,7 +3,11 @@ import Keg from "./Keg";
 
 function KegList() {
   return (
-    <Keg />
+    <Keg 
+      names="Jerry"
+      brand="Jack"
+      price="$20"
+      alcohol="18%"/>
   );
 }
 
