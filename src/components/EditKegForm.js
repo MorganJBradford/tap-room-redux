@@ -3,13 +3,21 @@ import ReusableForm from "./ReusableForm";
 import PropTypes from "prop-types";
 
 function EditKegForm(props) {
-  function handleEditKegFormSubmission(){
-    
+  const { keg } = props;
+  function handleEditKegFormSubmission(event){
+    event.preventDefault();
+    props.onEditKeg({
+      names: event.target.names.value,
+      brand: event.target.brand.value,
+      price: event.target.price.value,
+      alcohol: event.target.alcohol.value,
+      id: keg.id
+    });
   }
   return (
     <>
       <ReusableForm
-        formSubmissionHandler={props.handleEditKegFormSubmission}
+        formSubmissionHandler={handleEditKegFormSubmission}
         buttonText="Update Keg" />
     </>
   );
