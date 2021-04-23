@@ -38,7 +38,7 @@ class KegControl extends React.Component {
   }
 
   handleDeletingKeg = (id) => {
-    const newMainKegList = this.state.kegList.filter(keg => keg.id !== id);
+    const newMainKegList = this.state.mainKegList.filter(keg => keg.id !== id);
     this.setState({
       mainKegList: newMainKegList,
       selectedKeg: null
