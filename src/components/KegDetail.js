@@ -7,8 +7,9 @@ function KegDetail(props){
     <>
       <h1>Keg Detail</h1>
       <h3>{keg.names} - {keg.brand}</h3>
-      <p>{keg.price}</p>
-      <p><strong>{keg.alcohol}</strong></p>
+      <p>${keg.price}/pint</p>
+      <p><strong>{keg.alcohol}%</strong></p>
+      <p><em>{keg.pints}pts</em></p>
       <button onClick={ onClickingEdit }>Edit Keg</button>
       <button onClick={()=> onClickingDelete(keg.id)}>Remove Keg</button>
       <hr />
