@@ -18,16 +18,21 @@ function ReusableForm(props) {
         <input
           required
           type="number"
+          min="0"
           name="price"
           placeholder="Dollars/pint" />
         <input
           required
           type="number"
+          min="0"
+          max="96"
           name="alcohol"
-          placeholder="Alcohol Content" />
+          placeholder="Percentage Alcohol Content" />
         <input
           required
           type="number"
+          min="1"
+          max="124"
           name="pints"
           placeholder="Pints Available" />
         <button type="submit">{props.buttonText}</button>
