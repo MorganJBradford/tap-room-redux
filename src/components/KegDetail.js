@@ -4,8 +4,12 @@ import PropTypes from "prop-types";
 function KegDetail(props){
   const { keg, onClickingDelete, onClickingEdit, onClickingSell } = props;
   function decrementPintsByOne() {
-    keg.pints = keg.pints-1;
-    onClickingSell(keg);
+    if (keg.pints > 0) {
+      keg.pints = keg.pints-1;
+      onClickingSell(keg);
+    } else {
+      alert("Can't have less than 0! Perhaps try deleting the keg.");
+    }
   }
   return (
     <>
