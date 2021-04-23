@@ -1,16 +1,12 @@
 import React from "react";
 
-function Keg() {
-  const names = "Jerry";
-  const brandName = "Jack";
-  const price = "$15";
-  const booze = "Jerry";
+function Keg(props) {
   return (
     <>
-      <h2>Name: {names}</h2>
-      <h2>Brand: {brandName}</h2>
-      <h2>Price: {price}</h2>
-      <h2>Alcohol: {booze}</h2>
+      <h2>Name: {props.names}</h2>
+      <h2>Brand: {props.brand}</h2>
+      <h2>Price: {props.price}</h2>
+      <h2>Alcohol: {props.alcohol}</h2>
     </>
   );
 }
