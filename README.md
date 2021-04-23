@@ -92,8 +92,9 @@ Otherwise, skip to the [Add OUR Bot](#%EF%B8%8F-add-our-bot) section to get star
   
   #### Launch Application
 
-  * In the tap-room repository:
-      * Enter `npm start` in your terminal.
+  * In the  top level directory, tap-room:
+      1. Enter `npm install` in your terminal.
+      2. Enter `npm start` in your terminal.
 
 ------------------------------
 
