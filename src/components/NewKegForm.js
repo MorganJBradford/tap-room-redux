@@ -11,6 +11,7 @@ function NewKegForm(props) {
       brand: event.target.brand.value,
       price: event.target.price.value,
       alcohol: event.target.alcohol.value,
+      pints: event.target.pints.value,
       id: v4()
     });
   }
