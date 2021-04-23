@@ -21,7 +21,7 @@ function ReusableForm(props) {
           type="text"
           name="alcohol"
           placeholder="Alcohol Content" />
-        <button type="submit">{prop.buttonText}</button>
+        <button type="submit">{props.buttonText}</button>
       </form>
     </>
   );
