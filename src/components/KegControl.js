@@ -19,7 +19,8 @@ class KegControl extends React.Component {
     if (this.state.selectedKeg !== null) {
       this.setState({
         formVisibleOnPage: false,
-        selectedKeg: null
+        selectedKeg: null,
+        editing: false
       });
     } else {
       this.setState(prevState => ({
@@ -54,7 +55,7 @@ class KegControl extends React.Component {
   handleEditingKegInList = (kegToEdit) => {
     const editedMainKegList = this.state.mainKegList
       .filter(keg => keg.id !== this.state.selectedKeg.id)
-      .concat(ticketToEdit);
+      .concat(kegToEdit);
     this.setState({
       mainKegList: editedMainKegList,
       editing: false,
