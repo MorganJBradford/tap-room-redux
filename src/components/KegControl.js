@@ -27,6 +27,10 @@ class KegControl extends React.Component {
     }
   }
 
+  handleEditClick = () => {
+    this.setState({editing: true});
+  }
+
   handleAddingNewKegToList = (newKeg) => {
     const newMainKegList = this.state.mainKegList.concat(newKeg);
     this.setState({mainKegList: newMainKegList,
