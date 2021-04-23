@@ -6,10 +6,10 @@ function KegDetail(props){
   return (
     <>
       <h1>Keg Detail</h1>
-      <h3>{keg.names} - {keg.brand}</h3>
-      <p>${keg.price}/pint</p>
-      <p><strong>{keg.alcohol}%</strong></p>
-      <p><em>{keg.pints}pts</em></p>
+      <h3>Name: {keg.names} - Brand: {keg.brand}</h3>
+      <p>Price: ${keg.price}/pint</p>
+      <p>Alcohol Content: <strong>{keg.alcohol}%</strong></p>
+      <p><em>Availability: {keg.pints}pts</em></p>
       <button onClick={ onClickingEdit }>Edit Keg</button>
       <button onClick={()=> onClickingDelete(keg.id)}>Remove Keg</button>
       <hr />
