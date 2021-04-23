@@ -1,6 +1,6 @@
 <br>
 <p align="center">
-  <u><big>|| <b> Title !</b> || </big></u>
+  <u><big>|| <b> Tap-Room !</b> || </big></u>
 </p>
 <br>
 <p align="center">
@@ -24,14 +24,7 @@
 ## 🌐 About the Project
 
 ### 📖 Description
-A Discord bot that acts as a dad joke supplement to replace one of our retired instructors at [Epicodus](https://www.epicodus.com/). Written in C#/.NET, it utilizes an API via RESTful principles, WebSocket protocol, and Docker containerization for remote server hosting. 
-<br>
-<br>
-Although no setup is required to simply invite the bot to your Discord server, if you would like to download, alter, or deploy the source code yourself, follow along with the instructions detailed in the [Getting Started](#-getting-started) Section.
-<br>
-<br> 
-Otherwise, skip to the [Add OUR Bot](#%EF%B8%8F-add-our-bot) section to get started by adding the bot directly to your own Discord server. 
-
+A website for establishments selling alcohol to manage how their kegs, and their kegs' contents. 
 
 ### 🦠 Known Bugs
 
