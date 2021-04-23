@@ -1,9 +1,17 @@
 import React from "react";
 import { v4 } from "uuid";
+import PropTypes from "prop-types";
 
-function NewKegForm() {
+function NewKegForm(props) {
   function handleNewKegFormSubmission(event){
     event.preventDefault();
+    props.onNewTicketCreation({
+      names: event.target.names.value,
+      brand: event.target.brand.value,
+      price: event.target.price.value,
+      alcohol: event.target.alcohol.value,
+      id: v4()
+    });
   }
   return (
     <>
@@ -24,9 +32,14 @@ function NewKegForm() {
           type="text"
           name="alcohol"
           placeholder="Alcohol Content" />
+        <button type="submit">Add Keg</button>
       </form>
     </>
   );
 }
+
+NewKegForm.propTypes = {
+  onNewTicketCreation: PropTypes.func
+};
 
 export default NewKegForm;
