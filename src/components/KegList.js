@@ -3,11 +3,15 @@ import Keg from "./Keg";
 
 function KegList() {
   return (
-    <Keg 
-      names="Jerry"
-      brand="Jack"
-      price="$20"
-      alcohol="18%"/>
+    <>
+      {mainKegList.map((keg, index) =>
+        <Keg names={keg.names}
+        brand={keg.brand}
+        price={keg.price}
+        alcohol={keg.alcohol}
+        key={index} />
+      )}
+    </>
   );
 }
 
