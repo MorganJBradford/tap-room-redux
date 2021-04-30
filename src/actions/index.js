@@ -21,3 +21,7 @@ export const addKeg = (keg) => {
     id: id
   }
 } 
+
+export const editingKeg = () => ({
+  type: c.TOGGLE_EDIT_KEG
+});
