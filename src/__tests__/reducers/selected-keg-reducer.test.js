@@ -1,12 +1,12 @@
 import * as c from "../../actions/ActionTypes";
-import selectedKegReducer from "../../reducers/selected-keg-reducer";
+import editingKegReducer from "../../reducers/editing-keg-reducer";
 
-describe("selectedKegReducer", () => {
+describe("editingKegReducer", () => {
   test("Should return default state if no action type is recognized", () => {
-    expect(selectedKegReducer(false, { type: null })).toEqual(false);
+    expect(editingKegReducer(false, { type: null })).toEqual(false);
   });
 
   test("Should toggle editing keg state to true", () => {
-    expect(selectedKegReducer(false, { type: c.TOGGLE_EDIT_KEG })).toEqual(true);
+    expect(editingKegReducer(false, { type: c.TOGGLE_EDIT_KEG })).toEqual(true);
   });
 });
