@@ -26,6 +26,10 @@ describe("rootReducer", () => {
     expect(store.getState().formVisibleOnPage).toEqual(formVisibleReducer(undefined, { type: null }));
   });
 
+  test("Check that initial state of editingKegReducer matches rootReducer", () => {
+    expect(store.getState().editingKeg).toEqual(editingKegReducer(undefined, { type: null }));
+  });
+
   test("Check that ADD_KEG action works for kegListReducer and rootReducer", () => {
     const action = {
       type: c.ADD_KEG,
