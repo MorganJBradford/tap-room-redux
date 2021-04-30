@@ -1,4 +1,6 @@
 import { createStore } from "redux";
+import * as a from "./../../actions/index";
+import * as c from "./../../actions/ActionTypes";
 import formVisibleReducer from "../../reducers/form-visible-reducer";
 import rootReducer from "../../reducers/index";
 import kegListReducer from "../../reducers/keg-list-reducer";
@@ -20,6 +22,26 @@ describe("rootReducer", () => {
 
   test("Check that initial state of formVisibleReducer matches rootReducer", () => {
     expect(store.getState().formVisibleOnPage).toEqual(formVisibleReducer(undefined, { type: null }));
+  });
+
+  test("Check that ADD_KEG action works for kegListReducer and rootReducer", () => {
+    const action = {
+      type: c.ADD_KEG,
+      names: "Test Whiskey",
+      brand: "Brandolino's",
+      price: 20,
+      alcohol: 45,
+      pints: 100,
+      id: 1
+    }
+    store.dispatch(action);
+    expect(store.getState().mainKegList).toEqual(kegListReducer(undefined, action));
+  });
+
+  test("Check that TOGGLE_FORM action works for formVisibleReducer and rootReducer", () => {
+    const action = a.toggleForm();
+    store.dispatch(action);
+    expect(store.getState().formVisibleOnPage).toEqual(formVisibleReducer(undefined, action));
   });
 
 });
