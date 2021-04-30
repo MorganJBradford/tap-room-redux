@@ -50,4 +50,10 @@ describe("rootReducer", () => {
     expect(store.getState().formVisibleOnPage).toEqual(formVisibleReducer(undefined, action));
   });
 
+  test("Check that TOGGLE_EDIT_KEG action works for editingKegReducer and rootReducer", () => {
+    const action = a.editingKeg();
+    store.dispatch(action);
+    expect(store.getState().editingKeg).toEqual(editingKegReducer(undefined, action));
+  });
+
 });
