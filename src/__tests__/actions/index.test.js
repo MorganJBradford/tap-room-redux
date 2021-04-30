@@ -8,4 +8,10 @@ describe("tap-room actions", () => {
       id: 1
     })
   });
+
+  it("toggleForm should create TOGGLE_FORM action", () => {
+    expect(a.toggleForm()).toEqual({
+      type: c.TOGGLE_FORM
+    });
+  });
 });
