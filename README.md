@@ -1,6 +1,6 @@
 <br>
 <p align="center">
-  <u><big>|| <b> Tap-Room !</b> || </big></u>
+  <u><big>|| <b> Tap-Room-Redux !</b> || </big></u>
 </p>
 <p align="center">
   <p align="center">
@@ -15,15 +15,15 @@
   <small>Initiated April 23th.</small>
 </p>
 <p align="center">
-    <a href="https://github.com/MorganJBradford/tap-room"><big>Project Docs</big></a> ·
-    <a href="https://github.com/MorganJBradford/tap-room/issues"><big>Report Bug</big></a> ·
-    <a href="https://github.com/MorganJBradford/tap-room/issues"><big>Request Feature</big></a>
+    <a href="https://github.com/MorganJBradford/tap-room-redux"><big>Project Docs</big></a> ·
+    <a href="https://github.com/MorganJBradford/tap-room-redux/issues"><big>Report Bug</big></a> ·
+    <a href="https://github.com/MorganJBradford/tap-room-redux/issues"><big>Request Feature</big></a>
 </p>
 
 ## 🌐 About the Project
 
 ### 📖 Description
-A website for establishments selling alcohol to manage how their kegs, and their kegs' contents. 
+A website for establishments selling alcohol to manage their kegs, and their kegs' contents. 
 
 ### 🦠 Known Bugs
 
@@ -34,6 +34,8 @@ A website for establishments selling alcohol to manage how their kegs, and their
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [React](https://reactjs.org)
+* [Redux](https://redux.js.org)
+* [React Redux](https://react-redux.js.org)
 * [Git & GitHub](https://github.com/)
 
 ------------------------------
@@ -66,25 +68,25 @@ A website for establishments selling alcohol to manage how their kegs, and their
 
   #### Cloning
 
-  1) Navigate to the [repository here](https://github.com/MorganJBradford/tap-room).
+  1) Navigate to the [repository here](https://github.com/MorganJBradford/tap-room-redux).
   2) Click 'Code' to reveal the HTTPS url ending with .git and the 'Download ZIP' option.
   3) Open up your system Terminal or GitBash, navigate to your desktop with the command: `cd Desktop`, or whichever location suits you best.
-  4) Clone the repository to your desktop: `$ git clone https://github.com/MorganJBradford/tap-room.git`
-  5) Run the command `cd tap-room` to enter into the project directory.
+  4) Clone the repository to your desktop: `$ git clone https://github.com/MorganJBradford/tap-room-redux.git`
+  5) Run the command `cd tap-room-redux` to enter into the project directory.
   6) View or edit:
       * Code editor - Run the command `atom .` or `code .` to open the project in Atom or Visual Studio Code respectively for review and editing.
       * Text editor - Open by double clicking on any of the files to open in a text editor.
 
   #### Download
 
-  1) Navigate to the [repository here](https://github.com/MorganJBradford/tap-room).
+  1) Navigate to the [repository here](https://github.com/MorganJBradford/tap-room-redux).
   2) Click 'Code' to reveal the HTTPS url ending with .git and the 'Download ZIP' option.
   3) Click 'Download ZIP' and extract.
   4) Open by double clicking on any of the files to open in a text editor.
   
   #### Launch Application
 
-  * In the  top level directory, tap-room:
+  * In the  top level directory, tap-room-redux:
       1. Enter `npm install` in your terminal.
       2. Enter `npm start` in your terminal.
 
@@ -100,11 +102,11 @@ A website for establishments selling alcohol to manage how their kegs, and their
 
 ## ✉️ Contact and Support
 
-If you have any feedback or concerns, please contact one of the contributors.
+If you have any feedback or concerns, please contact me (see info above).
 
 <p>
-  <a href="https://github.com/Pingel88/DadJokeDiscordBot.Solution/issues">Report Bug</a> ·
-  <a href="https://github.com/Pingel88/DadJokeDiscordBot.Solution/issues">Request Feature</a>
+  <a href="https://github.com/MorganJBradford/tap-room-redux/issues">Report Bug</a> ·
+  <a href="https://github.com/MorganJBradford/tap-room-redux/issues">Request Feature</a>
 </p>
 
 ------------------------------
