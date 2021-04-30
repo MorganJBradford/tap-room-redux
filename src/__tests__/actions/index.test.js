@@ -15,6 +15,12 @@ describe("tap-room actions", () => {
     });
   });
 
+  it("editingKeg should create TOGGLE_EDIT_KEG action", () => {
+    expect(a.editingKeg()).toEqual({
+      type: c.TOGGLE_EDIT_KEG
+    });
+  });
+
   it("addKeg should create ADD_KEG action", () => {
     expect(a.addKeg({
       names: "Test Whiskey",
