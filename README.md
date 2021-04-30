@@ -39,7 +39,7 @@ A website for establishments selling alcohol to manage how their kegs, and their
 ------------------------------
 ## Component Tree
 <p align="center">
-  <img src="./src/img/tap-room-component-tree.png" height="400px" width="600px" align="center">
+  <img src="./src/img/Keg-Diagram.png" height="400px" width="600px" align="center">
 </p>
 
 ------------------------------
