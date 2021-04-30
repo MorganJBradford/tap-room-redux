@@ -6,7 +6,7 @@ describe("selectedKegReducer", () => {
     expect(selectedKegReducer(false, { type: null })).toEqual(false);
   });
 
-  test("Should toggle edit keg state to true", () => {
+  test("Should toggle editing keg state to true", () => {
     expect(selectedKegReducer(false, { type: c.TOGGLE_EDIT_KEG })).toEqual(true);
   });
 });
