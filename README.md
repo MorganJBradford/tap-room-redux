@@ -33,6 +33,7 @@ A website for establishments selling alcohol to manage their kegs, and their keg
 
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [Jest](https://jestjs.io)
 * [React](https://reactjs.org)
 * [Redux](https://redux.js.org)
 * [React Redux](https://react-redux.js.org)
