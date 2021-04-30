@@ -8,3 +8,16 @@ export const deleteKeg = (id) => ({
 export const toggleForm = () => ({
   type: c.TOGGLE_FORM
 });
+
+export const addKeg = (keg) => {
+  const { names, brand, price, alcohol, pints, id } = keg;
+  return {
+    type: c.ADD_KEG,
+    names: names,
+    brand: brand,
+    price: price,
+    alcohol: alcohol,
+    pints: pints,
+    id: id
+  }
+} 
