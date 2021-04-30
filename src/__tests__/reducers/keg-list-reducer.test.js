@@ -12,7 +12,25 @@ describe("kegListReducer", () => {
   pints: 100,
   id: 1,
   };
-
+  const currentState = {
+    1: {
+      names: "Test Whiskey",
+      brand: "Brandolino's",
+      price: 20,
+      alcohol: 45,
+      pints: 100,
+      id: 1,
+    },
+    2: {
+      names: "Test Margarita",
+      brand: "Brando's",
+      price: 10,
+      alcohol: 25,
+      pints: 50,
+      id: 2,
+    }
+  };
+  
   test("Should return default state if there is no action type passed into the reducer", () => {
     expect (kegListReducer({}, { type: null })).toEqual({});
   });
@@ -37,6 +55,24 @@ describe("kegListReducer", () => {
         alcohol: alcohol,
         pints: pints,
         id: id
+      }
+    });
+  });
+
+  test("Should successfully delete a keg", () => {
+    action = {
+      type: c.DELETE_KEG,
+      id: 1
+    };
+
+    expect(kegListReducer(currentState, action)).toEqual({
+      2: {
+        names: "Test Margarita",
+        brand: "Brando's",
+        price: 10,
+        alcohol: 25,
+        pints: 50,
+        id: 2,
       }
     });
   });
