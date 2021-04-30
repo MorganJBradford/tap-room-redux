@@ -14,4 +14,22 @@ describe("tap-room actions", () => {
       type: c.TOGGLE_FORM
     });
   });
+
+  it("addKeg should create ADD_KEG action", () => {
+    expect(a.addKeg({
+      names: "Test Whiskey",
+      brand: "Brandolino's",
+      price: 20,
+      alcohol: 45,
+      pints: 100,
+      id: 1,
+    })).toEqual({
+      names: "Test Whiskey",
+      brand: "Brandolino's",
+      price: 20,
+      alcohol: 45,
+      pints: 100,
+      id: 1,
+    });
+  });
 });
