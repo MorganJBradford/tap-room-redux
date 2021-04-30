@@ -24,6 +24,7 @@ describe("tap-room actions", () => {
       pints: 100,
       id: 1,
     })).toEqual({
+      type: c.ADD_KEG,
       names: "Test Whiskey",
       brand: "Brandolino's",
       price: 20,
