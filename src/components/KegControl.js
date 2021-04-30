@@ -1,4 +1,6 @@
+import { connect } from "react-redux";
 import React from "react";
+import * as a from "./../actions/index";
 import NewKegForm from "./NewKegForm";
 import KegList from "./KegList";
 import KegDetail from "./KegDetail";
@@ -9,7 +11,6 @@ class KegControl extends React.Component {
     super(props);
     this.state = {
       formVisibleOnPage: false,
-      mainKegList: [],
       selectedKeg: null,
       editing: false
     };
@@ -34,9 +35,10 @@ class KegControl extends React.Component {
   }
 
   handleAddingNewKegToList = (newKeg) => {
-    const newMainKegList = this.state.mainKegList.concat(newKeg);
-    this.setState({mainKegList: newMainKegList,
-                    formVisibleOnPage: false });
+    const { dispatch } = this.props;
+    const action = a.addKeg(newKeg);
+    dispatch(action);
+    this.setState({ formVisibleOnPage: false });
   }
 
   handleChangingSelectedKeg = (id) => {
@@ -45,17 +47,18 @@ class KegControl extends React.Component {
   }
 
   handleDeletingKeg = (id) => {
-    const newMainKegList = this.state.mainKegList.filter(keg => keg.id !== id);
+    const { dispatch } = this.props;
+    const action = a.deleteKeg(id);
+    dispatch(action);
     this.setState({
-      mainKegList: newMainKegList,
       selectedKeg: null
     });
   }
 
   handleEditingKegInList = (kegToEdit) => {
-    const editedMainKegList = this.state.mainKegList
-      .filter(keg => keg.id !== this.state.selectedKeg.id)
-      .concat(kegToEdit);
+    const { dispatch } = this.props;
+    const action = a.addKeg(kegToEdit);
+    dispatch(action);
     this.setState({
       mainKegList: editedMainKegList,
       editing: false,
@@ -95,5 +98,7 @@ class KegControl extends React.Component {
     );
   }
 }
+
+KegControl = connect()(KegControl);
 
 export default KegControl;
