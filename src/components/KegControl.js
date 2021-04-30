@@ -11,8 +11,13 @@ class KegControl extends React.Component {
 
   handleClick = () => {
     const { dispatch } = this.props;
-    const action2 = a.toggleForm();
-    dispatch(action2);
+    if (this.props.selectedKeg.id !== undefined) {
+      const action = a.selectKeg();
+      dispatch(action);
+    } else {
+      const action2 = a.toggleForm();
+      dispatch(action2);
+    }
   }
 
 
