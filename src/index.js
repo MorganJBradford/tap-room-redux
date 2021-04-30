@@ -4,10 +4,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
 import './index.css';
-import reducer from "./reducers/keg-list-reducer";
+import rootReducer from "./reducers/index";
 import reportWebVitals from './reportWebVitals';
 
-const store = createStore(reducer);
+const store = createStore(rootReducer);
 
 ReactDOM.render(
   <Provider store={store}>
