@@ -26,7 +26,7 @@ export const editingKeg = () => ({
   type: c.TOGGLE_EDIT_KEG
 });
 
-export const selectKeg = (keg) => {
+export const selectKeg = (keg = {}) => {
   const { names, brand, price, alcohol, pints, id } = keg;
   return {
     type: c.SELECT_KEG,
