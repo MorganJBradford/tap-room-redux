@@ -5,6 +5,7 @@ import formVisibleReducer from "../../reducers/form-visible-reducer";
 import rootReducer from "../../reducers/index";
 import editingKegReducer from "../../reducers/editing-keg-reducer"
 import kegListReducer from "../../reducers/keg-list-reducer";
+import kegSelectionReducer from "../../reducers/keg-selection-reducer";
 
 let store = createStore(rootReducer);
 
@@ -14,7 +15,8 @@ describe("rootReducer", () => {
     expect(rootReducer({}, { type: null })).toEqual({
       mainKegList: {},
       formVisibleOnPage: false,
-      editingKeg: false
+      editingKeg: false,
+      selectedKeg: {}
     });
   });
 
@@ -28,6 +30,10 @@ describe("rootReducer", () => {
 
   test("Check that initial state of editingKegReducer matches rootReducer", () => {
     expect(store.getState().editingKeg).toEqual(editingKegReducer(undefined, { type: null }));
+  });
+
+  test("Check that initial state of editingKegReducer matches rootReducer", () => {
+    expect(store.getState().selectedKeg).toEqual(kegSelectionReducer(undefined, { type: null }));
   });
 
   test("Check that ADD_KEG action works for kegListReducer and rootReducer", () => {
@@ -54,6 +60,20 @@ describe("rootReducer", () => {
     const action = a.editingKeg();
     store.dispatch(action);
     expect(store.getState().editingKeg).toEqual(editingKegReducer(undefined, action));
+  });
+
+  test("Check that SELECT_KEG action works for kegSelectionReducer and rootReducer", () => {
+    const action = {
+      type: c.SELECT_KEG,
+      names: "Test Whiskey",
+      brand: "Brandolino's",
+      price: 20,
+      alcohol: 45,
+      pints: 100,
+      id: 1
+    }
+    store.dispatch(action);
+    expect(store.getState().selectedKeg).toEqual(kegSelectionReducer(undefined, action));
   });
 
 });
