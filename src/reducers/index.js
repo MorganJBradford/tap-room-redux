@@ -6,7 +6,7 @@ import kegListReducer from "./keg-list-reducer";
 const rootReducer = combineReducers({
   formVisibleOnPage: formVisibleReducer,
   mainKegList: kegListReducer,
-  editingKeg: editingKegReducer
+  editingKeg: editingKegReducer,
 });
 
 export default rootReducer;
