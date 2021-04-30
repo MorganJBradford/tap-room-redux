@@ -6,7 +6,7 @@ function KegList(props) {
   return (
     <>
       <hr />
-      {props.kegList.map((keg) =>
+      {Object.values(props.kegList).map((keg) =>
         <Keg
         whenKegClicked={props.onKegSelection}
         names={keg.names}
@@ -22,7 +22,7 @@ function KegList(props) {
 }
 
 KegList.propTypes = {
-  kegList: PropTypes.array,
+  kegList: PropTypes.object,
   onKegSelection: PropTypes.func
 };
 
