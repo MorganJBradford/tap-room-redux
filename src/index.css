@@ -14,5 +14,11 @@ code {
 }
 
 .jumbotron {
-  background-color: brown;
+  background-color: #68483b;
+}
+
+.mainContent {
+  background-color: #856f5fc5;
+  min-height: 50vh;
+  border: 2px snow solid;
 }

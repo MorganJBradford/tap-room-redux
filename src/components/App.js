@@ -6,7 +6,9 @@ function App() {
   return (
     <div className="container">
         <Header />
-        <KegControl />
+        <div className="mainContent">
+          <KegControl />
+        </div>
     </div>
   );
 }
