@@ -38,11 +38,3 @@ export const selectKeg = (keg = {}) => {
     id: id
   }
 }
-
-// export const selectKeg = (id) => {
-
-//   return {
-//     type: c.SELECT_KEG,
-//     id
-//   }
-// } 
